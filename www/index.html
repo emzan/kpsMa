@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    
+    
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <link href="css/ionic.app.css" rel="stylesheet">
+
+    <style type="text/css">
+      .platform-ios .manual-ios-statusbar-padding{
+        padding-top:20px;
+      }
+      .manual-remove-top-padding{
+        padding-top:0px; 
+      }
+      .manual-remove-top-padding .scroll{
+        padding-top:0px !important;
+      }
+      ion-list.manual-list-fullwidth div.list, .list.card.manual-card-fullwidth {
+        margin-left:-10px;
+        margin-right:-10px;
+      }
+      ion-list.manual-list-fullwidth div.list > .item, .list.card.manual-card-fullwidth > .item {
+        border-radius:0px;
+        border-left:0px;
+        border-right: 0px;
+      }
+      .show-list-numbers-and-dots ul{
+        list-style-type: disc;
+        padding-left:40px;
+      }
+      .show-list-numbers-and-dots ol{
+        list-style-type: decimal;
+        padding-left:40px;
+      }
+    </style>
+
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/routes.js"></script>
+    
+    <script src="js/directives.js"></script>
+    <script src="js/services.js"></script>
+    <script src="https://cdn.jsdelivr.net/lodash/4.15.0/lodash.min.js"></script>
+    <script src="js/angular-simple-logger.js"></script>
+    <script src="js/angular-google-maps.min.js"></script>
+    <script src="js/googlemaps.init.js"></script>
+
+    <!-- Only required for Tab projects w/ pages in multiple tabs 
+    <script src="lib/ionicuirouter/ionicUIRouter.js"></script>
+    -->
+
+  </head>
+  <body ng-app="app" animation="slide-left-right-ios7">
+  <div>
+  <ion-side-menus enable-menu-with-back-views="false" data-componentid="side-menu21">
+    <ion-side-menu-content>
+      <ion-nav-bar class="bar-stable">
+        <ion-nav-back-button></ion-nav-back-button>
+        <ion-nav-buttons side="left">
+          <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+        </ion-nav-buttons>
+      </ion-nav-bar>
+      <ion-nav-view></ion-nav-view>
+    </ion-side-menu-content>
+    <ion-side-menu side="left" id="side-menu21">
+      <ion-header-bar class="bar-stable">
+        <div class="title">Menu</div>
+      </ion-header-bar>
+      <ion-content ng-controller="menuCtrl" padding="false" class="side-menu-left has-header ">
+        <ion-list id="menu-list1" data-componentid="list1">
+          <ion-item id="menu-list-item7" ui-sref="tabsController.page4()" menu-close="" data-componentid="list-item7">主畫面</ion-item>
+          <ion-item id="menu-list-item8" ui-sref="page7()" menu-close="" data-componentid="list-item8">認識靜修女中</ion-item>
+          <ion-item id="menu-list-item1" ui-sref="page14()" menu-close="" data-componentid="list-item1">國中部
+            <span class="item-note">男女兼收・男可直升/ESL/人文班</span>
+          </ion-item>
+          <ion-item id="menu-list-item2" ui-sref="page8()" menu-close="" data-componentid="list-item2">高中部
+            <span class="item-note">英文重點班</span>
+          </ion-item>
+          <ion-item id="menu-list-item3" ui-sref="page9()" menu-close="" data-componentid="list-item3">高職部
+            <span class="item-note">商業服務・應用日文・應用英文</span>
+          </ion-item>
+          <ion-item id="menu-list-item4" ui-sref="page12()" menu-close="" data-componentid="list-item4">升學路徑</ion-item>
+          <ion-item id="menu-list-item10" ui-sref="page17()" menu-close="" data-componentid="list-item10">環境設備</ion-item>
+          <ion-item id="menu-list-item11" ui-sref="page15()" menu-close="" data-componentid="list-item11">教育特色</ion-item>
+          <ion-item id="menu-list-item12" ui-sref="page16()" menu-close="" data-componentid="list-item12">一般課程</ion-item>
+          <ion-item id="menu-list-item13" ui-sref="page18()" menu-close="" data-componentid="list-item13">週六課程</ion-item>
+          <ion-item id="menu-list-item14" ui-sref="page19()" menu-close="" data-componentid="list-item14">多元活動</ion-item>
+          <ion-item id="menu-list-item17" ui-sref="page21()" menu-close="" data-componentid="list-item17">營隊課程</ion-item>
+          <ion-item id="menu-list-item9" ui-sref="page10()" menu-close="" data-componentid="list-item9">學雜費及補助</ion-item>
+          <ion-item id="menu-list-item5" ui-sref="page11()" menu-close="" data-componentid="list-item5">學生宿舍</ion-item>
+          <ion-item id="menu-list-item6" ui-sref="page13()" menu-close="" data-componentid="list-item6">交通資訊</ion-item>
+          <ion-item id="menu-list-item15" ui-sref="QA()" menu-close="" data-componentid="list-item15">常見Q&amp;A</ion-item>
+        </ion-list>
+      </ion-content>
+    </ion-side-menu>
+  </ion-side-menus>
+</div>
+  </body>
+</html>
