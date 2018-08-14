@@ -1,3 +1,21 @@
-<ion-view title="營隊課程" id="page21">
-  <ion-content padding="true" class="has-header"></ion-content>
+<ion-view title="選擇時區" id="page21">
+  <ion-content padding="true" class="has-header">
+    <div class="spacer" style="width: 300px; height: 55px;"></div>
+    <div id="page21-markdown234" class="show-list-numbers-and-dots">
+      <p style="color:#7E7E7E;font-size:17px;">時間會依地方時區變更</p>
+
+      <p style="color:#7E7E7E;font-size:17px;">~</p>
+
+      <p style="color:#7E7E7E;font-size:17px;">如果你要維持台灣地區時間</p>
+
+      <p style="color:#7E7E7E;font-size:17px;">請變更此設定</p>
+    </div>
+    <div class="spacer" style="width: 300px; height: 55px;"></div>
+    <form id="page21-form14" class="list">
+      <ion-toggle toggle-class="toggle-dark" id="page21-toggle2" ng-model="showContent">台灣時區</ion-toggle>
+    </form>
+    <div id="page21-markdown231" ng-show="showContent" style="text-align:right;" class="show-list-numbers-and-dots">
+      <p style="color:#F1A31A;font-size:12px;">變更成台灣時區</p>
+    </div>
+  </ion-content>
 </ion-view>

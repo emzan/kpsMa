@@ -1,0 +1,28 @@
+<ion-view title="目前的祈禱" id="page2">
+  <ion-content padding="true" class="manual-remove-top-padding has-header">
+    <div style="margin-left: -10px; width: calc(100% + 20px);">
+      <img src="img/POP1.JPGaltmediatoken81f53ba6-9c84-40d9-8905-3d3b8c4921d4" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+    </div>
+    <ion-refresher pulling-text="欲更新內容，請拉下指令列..." on-refresh="loadData()"></ion-refresher>
+    <div class="spacer" style="width: 300px; height: 17px;"></div>
+    <div id="page2-markdown162" ng-repeat="survey in surveys" class="show-list-numbers-and-dots">
+      <p style="color:#647BD1;">{{survey.time}}</p>
+    </div>
+    <div id="page2-markdown3" ng-repeat="survey in surveys | orderBy:'-'" class="show-list-numbers-and-dots">
+      <p style="color:#647BD1;font-size:16px;">{{survey.favorite_moment}}</p>
+    </div>
+    <div id="page2-markdown22" ng-repeat="survey in surveys | orderBy:'-'" class="show-list-numbers-and-dots">
+      <p style="color:#33948A;font-size:12px;">{{survey.quantum}} 人跟您一起祈禱</p>
+    </div>
+    <div class="spacer" style="width: 300px; height: 19px;"></div>
+    <div id="page2-markdown4" ng-repeat="survey in surveys | orderBy:'-'" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:18px;">{{survey.name}}</p>
+    </div>
+    <div class="spacer" style="width: 300px; height: 19px;"></div>
+    <div id="page2-markdown42" style="text-align:center;" class="show-list-numbers-and-dots">
+      <p style="color:#3BC036;">
+        <strong>跟教宗一起祈禱</strong>
+      </p>
+    </div>
+  </ion-content>
+</ion-view>

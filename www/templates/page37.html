@@ -1,0 +1,32 @@
+<ion-view title="每日讀經" id="page37">
+  <ion-content padding="true" class="manual-remove-top-padding has-header">
+    <form id="page37-form20" class="list">
+      <ion-slides disable-side-menu-drag="" options="{'loop': true}" slider="slider9" delegate-handle="slider9" id="page37-slider9" style="width:calc(100% + 20px);height:200px;margin-left:-10px;">
+        <ion-slide-page id="page37-slide212" ng-repeat="picture in pictures" style="background:url(&quot;{{picture}}&quot;) no-repeat center;background-size:cover;"></ion-slide-page>
+      </ion-slides>
+      <div class="spacer" style="width: 320px; height: 23px;"></div>
+      <div id="page37-markdown127" ng-repeat="survey in surveys" class="show-list-numbers-and-dots">
+        <p style="color:#DD8801;">{{survey.vangelo_titolo}}</p>
+      </div>
+    </form>
+    <ion-list id="page37-list38">
+      <ion-item class="item-thumbnail-left assertive" id="page37-list-item47" href-inappbrowser="https://www.youtube.com/watch?v={{survey.ultimo_vangelo}}" ng-repeat="survey in surveys">
+        <img src="img/v5xheMWaRReGVqkiZYXp_Jerry_Cov.png">
+        <h2assertive>Youtube
+          <p style="white-space:normal;">{{survey.vangelo_titolo}}</p>
+        </h2assertive>
+      </ion-item>
+      <ion-item class="item-thumbnail-left positive" id="page37-list-item50" href-inappbrowser="https://www.youtube.com/watch?v={{survey.vangelo_continent}}" ng-repeat="survey in surveys">
+        <img src="img/uoi27rCS8ep4a4MKWkLD_Cov_1.png">
+        <h2positive>生命教育
+          <p style="white-space:normal;">{{survey.data_terra}}</p>
+        </h2positive>
+      </ion-item>
+    </ion-list>
+    <div class="spacer" style="width: 320px; height: 29px;"></div>
+    <div id="page37-markdown128" ng-repeat="survey in surveys" class="show-list-numbers-and-dots">
+      <p style="color:#000000;">{{survey.vangelo_commento}}</p>
+    </div>
+    <div class="spacer" style="width: 320px; height: 23px;"></div>
+  </ion-content>
+</ion-view>

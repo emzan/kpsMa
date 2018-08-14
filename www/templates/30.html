@@ -1,0 +1,20 @@
+<ion-view title="無我服務獎30" id="page9">
+  <ion-content padding="false" class="manual-remove-top-padding has-header">
+    <ion-refresher pulling-text="欲更新內容，請拉下指令列..." on-refresh="loadData()"></ion-refresher>
+    <form id="30-form10" class="list">
+      <div class="spacer" style="width: 320px; height: 23px;"></div>
+      <label class="item item-input" id="30-search5">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="search" placeholder="" ng-model="data.search" ng-change="search()">
+      </label>
+    </form>
+    <ion-list id="30-list11">
+      <ion-item class="item-thumbnail-left dark" id="30-list-item49" ui-sref="atutorial({&quot;fotokey&quot;:&quot;&quot;+atutorial.key+&quot;&quot;})" ng-repeat="atutorial in narrowed_atutorials">
+        <img src="{{atutorial.image}}">
+        <h2dark>{{atutorial.name}}
+          <p>{{atutorial.cat}}</p>
+        </h2dark>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

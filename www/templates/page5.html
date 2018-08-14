@@ -1,12 +1,37 @@
-<ion-view title="行事曆" id="page5">
-  <ion-content padding="true" scroll="false" class="has-header">
-    <div class="spacer" style="width: 300px; height: 40px;"></div>
-    <div id="page5-markdown1" style="text-align:center;" class="show-list-numbers-and-dots">
-      <p style="color:#000000;">抱歉，下個月再公開行事曆</p>
+<ion-view title="每日奉獻誦" id="page5">
+  <ion-content padding="true" class="manual-remove-top-padding has-header">
+    <div style="margin-left: -10px; width: calc(100% + 20px);">
+      <img src="img/POP1.JPGaltmediatoken81f53ba6-9c84-40d9-8905-3d3b8c4921d4" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
     </div>
-    <p>
-      <iframe src="https://calendar.google.com/calendar/b/1/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=bish.tp.edu.tw_s2k74dnnvj56b6ppjqelnsgdfc%40group.calendar.google.com&amp;color=%23B1365F&amp;ctz=Asia%2FTaipei" style="border-width:100%"
-        width="100%" height="455" frameborder="0" scrolling="no"></iframe>
-    </p>
+    <div class="spacer" style="width: 300px; height: 21px;"></div>
+    <div id="page5-markdown37" class="show-list-numbers-and-dots">
+      <p style="color:#33948A;font-size:16px;">仁慈的天父</p>
+    </div>
+    <div id="page5-markdown2" class="show-list-numbers-and-dots">
+      <p style="color:#33948A;font-size:16px;">感謝祢恩賜這新的一天, 我把今天的一切祈禱、工作、喜樂和痛苦全獻給祢。</p>
+    </div>
+    <div id="page5-markdown38" class="show-list-numbers-and-dots">
+      <p style="color:#33948A;font-size:16px;">聯合祢的聖子耶穌聖心，為救贖世界，時時刻刻在感恩聖事中奉獻自己。</p>
+    </div>
+    <div class="spacer" style="width: 300px; height: 18px;"></div>
+    <div id="page5-markdown31" class="show-list-numbers-and-dots">
+      <p style="color:#33948A;font-size:16px;">願在聖神內</p>
+    </div>
+    <div id="page5-markdown46" class="show-list-numbers-and-dots">
+      <p style="color:#33948A;font-size:16px;">偕同教會之母—聖母瑪利亞，為祢的聖愛作證，並為本月內教宗託付給我們的意向祈禱。</p>
+    </div>
+    <div class="spacer" style="width: 300px; height: 26px;"></div>
+    <div id="page5-markdown39" ng-repeat="survey in surveys | orderBy:'-'" class="show-list-numbers-and-dots">
+      <p style="color:#6A7EF1;font-size:17px;">{{survey.dodiciuniversal}}</p>
+    </div>
+    <div id="page5-markdown109" ng-repeat="survey in surveys | orderBy:'-'" class="show-list-numbers-and-dots">
+      <p style="color:#6A7EF1;font-size:17px;">{{survey.dodicievangelization}}</p>
+    </div>
+    <div class="spacer" style="width: 300px; height: 53px;"></div>
+    <div id="page5-markdown49" style="text-align:center;" class="show-list-numbers-and-dots">
+      <p style="color:#22BD1C;">
+        <strong>跟教宗一起祈禱</strong>
+      </p>
+    </div>
   </ion-content>
 </ion-view>

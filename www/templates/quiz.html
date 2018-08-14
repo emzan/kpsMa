@@ -1,0 +1,135 @@
+<ion-view title="Quiz" cache-view="false" id="page10">
+  <ion-content padding="true" class="has-header">
+    <ion-refresher pulling-text="欲更新內容，請拉下指令列..." on-refresh="loadData()"></ion-refresher>
+    <div id="quiz-markdown156" class="show-list-numbers-and-dots">
+      <p style="color:#000000;">看過光啟社的節目嗎?請您填寫問卷，讓我們能繼續進步，謝謝。</p>
+    </div>
+    <div class="spacer" style="width: 300px; height: 28px;"></div>
+    <div id="quiz-markdown14" class="show-list-numbers-and-dots">
+      <p style="color:#1E90E9;font-size:16px;">節目：Oh My God 1</p>
+    </div>
+    <ion-slides disable-side-menu-drag="" options="{'loop': true}" slider="slider11" delegate-handle="slider11" id="quiz-slider11" style="width:calc(100% + 20px);height:200px;margin-left:-10px;">
+      <ion-slide-page id="quiz-slide215" style="background:url(&quot;img/Zx6N1yRjQkemzhtgwNjq_Oh1_2.png&quot;) no-repeat center;background-size:cover;"></ion-slide-page>
+      <ion-slide-page id="quiz-slide216" style="background:url(&quot;img/PNwTTPzQXqaiHosSvPEv_Oh1_1.png&quot;) no-repeat center;background-size:cover;"></ion-slide-page>
+      <ion-slide-page id="quiz-slide217" style="background:url(&quot;img/dMMV4GHRxqUQYLcktoVQ_Oh1_0.png&quot;) no-repeat center;background-size:cover;"></ion-slide-page>
+    </ion-slides>
+    <div class="spacer" style="width: 300px; height: 17px;"></div>
+    <div id="quiz-markdown18" class="show-list-numbers-and-dots">
+      <p style="color:#F5A34B;font-size:17px;">「敏道家園」在哪?</p>
+    </div>
+    <form id="quiz-form21" class="list">
+      <label class="item item-select" id="quiz-select1">
+        <span class="input-label">地方</span>
+        <select ng-model="data.zhort" ng-options="zhort.points as zhort.place for zhort in zhorts"></select>
+      </label>
+    </form>
+    <div class="spacer" style="height: 28px;"></div>
+    <div id="quiz-markdown131" class="show-list-numbers-and-dots">
+      <p style="color:#1E90E9;font-size:16px;">節目：漁樂新視界</p>
+    </div>
+    <ion-slides disable-side-menu-drag="" options="{'loop': true}" slider="slider12" delegate-handle="slider12" id="quiz-slider12" style="width:calc(100% + 20px);height:200px;margin-left:-10px;">
+      <ion-slide-page id="quiz-slide221" style="background:url(&quot;img/nLfXVP9XT7SOERr7wTS0_Fi_2.png&quot;) no-repeat center;background-size:cover;"></ion-slide-page>
+      <ion-slide-page id="quiz-slide222" style="background:url(&quot;img/gc1QV6HcTGmak5wdcIHP_Fi_1.png&quot;) no-repeat center;background-size:cover;"></ion-slide-page>
+      <ion-slide-page id="quiz-slide223" style="background:url(&quot;img/i2EcaIQT8uC1lxxOkFox_Fi_0.png&quot;) no-repeat center;background-size:cover;"></ion-slide-page>
+    </ion-slides>
+    <div class="spacer" style="width: 300px; height: 17px;"></div>
+    <div id="quiz-markdown130" class="show-list-numbers-and-dots">
+      <p style="color:#F5A34B;font-size:17px;">「主持人」叫什麼名字?</p>
+    </div>
+    <form id="quiz-form23" class="list">
+      <label class="item item-select" id="quiz-select3">
+        <span class="input-label">名字</span>
+        <select ng-model="data.size" ng-options="size.points as size.place for size in sizes"></select>
+      </label>
+      <div class="spacer" style="width: 300px; height: 28px;"></div>
+      <div id="quiz-markdown143" class="show-list-numbers-and-dots">
+        <p style="color:#1E90E9;font-size:16px;">節目：生命相對論</p>
+      </div>
+      <ion-slides disable-side-menu-drag="" options="{'loop': true}" slider="slider13" delegate-handle="slider13" id="quiz-slider13" style="width:calc(100% + 20px);height:200px;margin-left:-10px;">
+        <ion-slide-page id="quiz-slide224" style="background:url(&quot;img/SZ17HnYiTXgbSNhGusNw_Vi_1.png&quot;) no-repeat center;background-size:cover;"></ion-slide-page>
+        <ion-slide-page id="quiz-slide225" style="background:url(&quot;img/nna2IQqrRleNpzXVgBg0_Vi_2.png&quot;) no-repeat center;background-size:cover;"></ion-slide-page>
+        <ion-slide-page id="quiz-slide226" style="background:url(&quot;img/OGcdSvaIT0OLXWcDsdXk_Vi_0.png&quot;) no-repeat center;background-size:cover;"></ion-slide-page>
+      </ion-slides>
+      <div class="spacer" style="height: 17px;"></div>
+      <div id="quiz-markdown142" class="show-list-numbers-and-dots">
+        <p style="color:#F5A34B;font-size:17px;">A cappella媽媽和女兒叫什麼名字?</p>
+      </div>
+      <label class="item item-select" id="quiz-select6">
+        <span class="input-label">名字</span>
+        <select ng-model="data.tile" ng-options="tile.points as tile.place for tile in tiles"></select>
+      </label>
+      <div class="spacer" style="width: 300px; height: 28px;"></div>
+    </form>
+    <div id="quiz-markdown132" class="show-list-numbers-and-dots">
+      <p style="color:#1E90E9;font-size:16px;">節目：光啟社經典節目</p>
+    </div>
+    <ion-slides disable-side-menu-drag="" options="{'loop': true}" slider="slider20" delegate-handle="slider20" id="quiz-slider20" style="width:calc(100% + 20px);height:200px;margin-left:-10px;">
+      <ion-slide-page id="quiz-slide242" style="background:url(&quot;img/HtjhadpRTfarOj9tCiz8_Do_0.png&quot;) no-repeat center;background-size:cover;"></ion-slide-page>
+      <ion-slide-page id="quiz-slide243" style="background:url(&quot;img/Z9aWsmx6TUOZFixAWu4b_Do_1.png&quot;) no-repeat center;background-size:cover;"></ion-slide-page>
+      <ion-slide-page id="quiz-slide244" style="background:url(&quot;img/PYNcMnb4Q7OLrcQI7WnX_Do_2.png&quot;) no-repeat center;background-size:cover;"></ion-slide-page>
+    </ion-slides>
+    <div class="spacer" style="height: 17px;"></div>
+    <div id="quiz-markdown133" class="show-list-numbers-and-dots">
+      <p style="color:#F5A34B;font-size:17px;">最有名的光啟社經典節目?</p>
+    </div>
+    <form id="quiz-form25" class="list">
+      <label class="item item-select" id="quiz-select4">
+        <span class="input-label">標題</span>
+        <select ng-model="data.sile" ng-options="sile.points as sile.place for sile in siles"></select>
+      </label>
+      <div class="spacer" style="width: 300px; height: 28px;"></div>
+    </form>
+    <div id="quiz-markdown136" class="show-list-numbers-and-dots">
+      <p style="color:#1E90E9;font-size:16px;">節目：徐光啟和郎世寧</p>
+    </div>
+    <ion-slides disable-side-menu-drag="" options="{'loop': true}" slider="slider22" delegate-handle="slider22" id="quiz-slider22" style="width:calc(100% + 20px);height:200px;margin-left:-10px;">
+      <ion-slide-page id="quiz-slide248" ng-repeat="picture in pictures" style="background:url(&quot;{{picture}}&quot;) no-repeat center;background-size:cover;"></ion-slide-page>
+    </ion-slides>
+    <div id="quiz-markdown137" class="show-list-numbers-and-dots">
+      <p style="color:#F5A34B;font-size:17px;">「Castiglione」是誰的名字?</p>
+    </div>
+    <form id="quiz-form24" class="list">
+      <label class="item item-select" id="quiz-select5">
+        <span class="input-label">名字</span>
+        <select ng-model="data.kile" ng-options="kile.points as kile.place for kile in kiles"></select>
+      </label>
+      <div class="spacer" style="width: 300px; height: 28px;"></div>
+      <div id="quiz-markdown148" class="show-list-numbers-and-dots">
+        <p style="color:#1E90E9;font-size:16px;">節目：大朋友分享</p>
+      </div>
+      <ion-slides disable-side-menu-drag="" options="{'loop': true}" slider="slider15" delegate-handle="slider15" id="quiz-slider15" style="width:calc(100% + 20px);height:200px;margin-left:-10px;">
+        <ion-slide-page id="quiz-slide227" style="background:url(&quot;img/Y8dg1Q2UTFCogiQj2ezE_Jer_1.png&quot;) no-repeat center;background-size:cover;"></ion-slide-page>
+        <ion-slide-page id="quiz-slide228" style="background:url(&quot;img/IdyKdV1iQ4G1n2aN6eSO_Jer_2.png&quot;) no-repeat center;background-size:cover;"></ion-slide-page>
+        <ion-slide-page id="quiz-slide229" style="background:url(&quot;img/eHVMRrXLSOq2lxaanVjq_Jer_0.png&quot;) no-repeat center;background-size:cover;"></ion-slide-page>
+      </ion-slides>
+      <div class="spacer" style="height: 17px;"></div>
+      <div id="quiz-markdown147" class="show-list-numbers-and-dots">
+        <p style="color:#F5A34B;font-size:17px;">哪一位是美國人?</p>
+      </div>
+      <label class="item item-select" id="quiz-select8">
+        <span class="input-label">哪一位</span>
+        <select ng-model="data.cile" ng-options="cile.points as cile.place for cile in ciles"></select>
+      </label>
+      <div class="spacer" style="width: 300px; height: 28px;"></div>
+      <div id="quiz-markdown152" class="show-list-numbers-and-dots">
+        <p style="color:#1E90E9;font-size:16px;">節目：Oh My God 2</p>
+      </div>
+      <ion-slides disable-side-menu-drag="" options="{'loop': true}" slider="slider16" delegate-handle="slider16" id="quiz-slider16" style="width:calc(100% + 20px);height:200px;margin-left:-10px;">
+        <ion-slide-page id="quiz-slide230" style="background:url(&quot;img/PqMLL8rlTZS94LU4NmNS_Oh2_2.png&quot;) no-repeat center;background-size:cover;"></ion-slide-page>
+        <ion-slide-page id="quiz-slide231" style="background:url(&quot;img/uTeQgsdTSuGFCB7xd71p_Oh2_0.png&quot;) no-repeat center;background-size:cover;"></ion-slide-page>
+        <ion-slide-page id="quiz-slide232" style="background:url(&quot;img/g6eUrX16RW25YTG1S7XT_Oh2_1.png&quot;) no-repeat center;background-size:cover;"></ion-slide-page>
+      </ion-slides>
+      <div class="spacer" style="height: 17px;"></div>
+      <div id="quiz-markdown153" class="show-list-numbers-and-dots">
+        <p style="color:#F5A34B;font-size:17px;">「蘭陽青年會」在哪?</p>
+      </div>
+      <label class="item item-select" id="quiz-select9">
+        <span class="input-label">地方</span>
+        <select ng-model="data.short" ng-options="short.points as short.place for short in shorts"></select>
+      </label>
+    </form>
+    <div class="spacer" style="width: 300px; height: 21px;"></div>
+    <button id="quiz-button9" ng-click="order()" class="button button-positive button-block">看你的測驗成績</button>
+    <div class="spacer" style="width: 300px; height: 21px;"></div>
+  </ion-content>
+</ion-view>

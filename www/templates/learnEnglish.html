@@ -1,0 +1,93 @@
+<ion-view title="Learn English" id="page44">
+  <ion-content padding="true" class="has-header">
+    <div id="learnEnglish-markdown175" ng-repeat="message in messages" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:20px;">{{message.que1}}
+        <strong>{{data.choice1}}</strong> {{message.que4}}</p>
+    </div>
+    <form id="learnEnglish-form61" class="list">
+      <label class="item item-select" id="learnEnglish-select15">
+        <span class="input-label">Select</span>
+        <select ng-repeat="message in messages" ng-model="data.choice1">
+          <option></option>
+          <option>{{message.ans10}}</option>
+          <option>{{message.ans11}}</option>
+          <option>{{message.ans12}}</option>
+          <option>{{message.ans13}}</option>
+          <option>{{message.ans14}}</option>
+        </select>
+      </label>
+    </form>
+    <div id="learnEnglish-markdown176" ng-repeat="message in messages" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:20px;">{{message.que2}}
+        <strong>{{data.choice2}}</strong> {{message.que5}}</p>
+    </div>
+    <form id="learnEnglish-form62" class="list">
+      <label class="item item-select" id="learnEnglish-select28">
+        <span class="input-label">Select</span>
+        <select ng-repeat="message in messages" ng-model="data.choice2">
+          <option></option>
+          <option>{{message.ans20}}</option>
+          <option>{{message.ans21}}</option>
+          <option>{{message.ans22}}</option>
+          <option>{{message.ans23}}</option>
+          <option>{{message.ans24}}</option>
+        </select>
+      </label>
+    </form>
+    <div id="learnEnglish-markdown177" ng-repeat="message in messages" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:20px;">{{message.que3}}
+        <strong>{{data.choice3}}</strong> {{message.que6}}</p>
+    </div>
+    <form id="learnEnglish-form63" class="list">
+      <label class="item item-select" id="learnEnglish-select29">
+        <span class="input-label">Select</span>
+        <select ng-repeat="message in messages" ng-model="data.choice3">
+          <option></option>
+          <option>{{message.ans30}}</option>
+          <option>{{message.ans31}}</option>
+          <option>{{message.ans32}}</option>
+          <option>{{message.ans33}}</option>
+          <option>{{message.ans34}}</option>
+        </select>
+      </label>
+    </form>
+    <div id="learnEnglish-markdown178" ng-repeat="message in messages" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:20px;">{{message.que7}}
+        <strong>{{data.choice4}}</strong> {{message.que8}}</p>
+    </div>
+    <form id="learnEnglish-form64" class="list">
+      <label class="item item-select" id="learnEnglish-select30">
+        <span class="input-label">Select</span>
+        <select ng-repeat="message in messages" ng-model="data.choice4">
+          <option></option>
+          <option>{{message.ans40}}</option>
+          <option>{{message.ans41}}</option>
+          <option>{{message.ans42}}</option>
+          <option>{{message.ans43}}</option>
+          <option>{{message.ans44}}</option>
+        </select>
+      </label>
+    </form>
+    <div id="learnEnglish-markdown408" ng-repeat="message in messages" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:20px;">{{message.que9}}
+        <strong>{{data.choice5}}</strong> {{message.que10}}</p>
+    </div>
+    <form id="learnEnglish-form65" class="list">
+      <label class="item item-select" id="learnEnglish-select31">
+        <span class="input-label">Select</span>
+        <select ng-repeat="message in messages" ng-model="data.choice5">
+          <option></option>
+          <option>{{message.ans50}}</option>
+          <option>{{message.ans51}}</option>
+          <option>{{message.ans52}}</option>
+          <option>{{message.ans53}}</option>
+          <option>{{message.ans54}}</option>
+        </select>
+      </label>
+    </form>
+    <div class="spacer" style="width: 300px; height: 29px;"></div>
+    <a ui-sref="solutions({&quot;choice1&quot;:&quot;&quot;+data.choice1+&quot;&quot;,&quot;choice2&quot;:&quot;&quot;+data.choice2+&quot;&quot;,&quot;choice3&quot;:&quot;&quot;+data.choice3+&quot;&quot;,&quot;choice4&quot;:&quot;&quot;+data.choice4+&quot;&quot;,&quot;choice5&quot;:&quot;&quot;+data.choice5+&quot;&quot;})"
+      id="learnEnglish-button26" class="button button-dark button-block">See your results</a>
+    <div class="spacer" style="height: 100px;"></div>
+  </ion-content>
+</ion-view>

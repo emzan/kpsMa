@@ -1,0 +1,42 @@
+<ion-view title="兒童故事" id="page32">
+  <ion-content padding="true" class="manual-remove-top-padding has-header">
+    <form id="page32-form18" class="list">
+      <ion-slides disable-side-menu-drag="" options="{'loop': true}" slider="slider6" delegate-handle="slider6" id="page32-slider6" style="width:calc(100% + 20px);height:200px;margin-left:-10px;">
+        <ion-slide-page id="page32-slide29" ng-repeat="picture in pictures" style="background:url(&quot;{{picture}}&quot;) no-repeat center;background-size:cover;"></ion-slide-page>
+      </ion-slides>
+      <div class="spacer" style="width: 320px; height: 23px;"></div>
+      <div id="page32-markdown115" class="show-list-numbers-and-dots">
+        <p style="color:#0495D0;">如何有效應用現代化數位影音的特質，引導孩子們進入閱讀天地，同時也讓孩子結合耳朵的聽、眼睛的看，以及腦部對故事的建構和理解，達到潛移默化的教育效果，正是本兒童節目所希望能達到的目標。 誠如美學大師蔣勳所言：「偉大的文學，都是從講故事開始的。…可以令人獲得慰藉，可以讓心靈被充滿。」
+        </p>
+      </div>
+      <div class="spacer" style="width: 320px; height: 11px;"></div>
+      <div id="page32-markdown116" class="show-list-numbers-and-dots">
+        <p style="color:#DD8801;">我們希望給未來的主人翁們一個優質的兒童節目，裡面擁有豐富的想像力、創造力，從各種面向不同的故事中，建立良好的人生觀與價值觀。 這就是「靴子裡大世界」兒童節目的企劃初衷。
+        </p>
+      </div>
+      <div class="spacer" style="width: 320px; height: 23px;"></div>
+      <label class="item item-input" id="page32-search12">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="search" placeholder="" ng-model="data.search" ng-change="search()">
+      </label>
+    </form>
+    <ion-list id="page32-list32">
+      <ion-item class="item-thumbnail-left dark" id="page32-list-item39" ui-sref="htutorial({&quot;videokey&quot;:&quot;&quot;+htutorial.key+&quot;&quot;})" ng-repeat="htutorial in narrowed_htutorials">
+        <img src="{{htutorial.image}}">
+        <h2dark>{{htutorial.name}}
+          <p style="white-space:normal;">{{htutorial.description}}</p>
+        </h2dark>
+      </ion-item>
+    </ion-list>
+    <div class="spacer" style="width: 320px; height: 46px;"></div>
+    <h3 id="page32-heading3" style="color:#000000;text-align:center;">靴子老師</h3>
+    <div>
+      <img src="img/hki3ehUGQ3VxbKlARnWA_Ptof.PNG" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+    </div>
+    <div id="page32-markdown120" class="show-list-numbers-and-dots">
+      <p style="color:#000000;">薛美華，大家都叫她《靴子老師》，在 劇場界有《操偶之神》的美譽，是專業 偶戲的演員和導演。擅長與小朋友透過 角色扮演和遊戲的方式，引導孩子們投 入劇情，在這種「開放性」的實境表演 互動需求的條件下，可說是具有相當經 驗的人才。
+      </p>
+    </div>
+    <div class="spacer" style="width: 320px; height: 23px;"></div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,49 @@
+<ion-view title="光啟社和教宗新聞" id="page49">
+  <ion-content padding="true" class="has-header">
+    <ion-refresher pulling-text="欲更新內容，請拉下指令列..." on-refresh="loadData()"></ion-refresher>
+    <div class="spacer" style="width: 300px; height: 37px;"></div>
+    <div id="page49-markdown33" ng-repeat="survey in surveys" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:18px;">{{survey.latest_news}}</p>
+    </div>
+    <div class="spacer" style="width: 300px; height: 17px;"></div>
+    <div id="page49-markdown34" ng-repeat="survey in surveys" class="show-list-numbers-and-dots">
+      <p style="color:#7C7C7C;font-size:12px;">{{survey.time}}</p>
+    </div>
+    <div class="spacer" style="width: 300px; height: 27px;"></div>
+    <div id="page49-markdown35" ng-repeat="survey in surveys" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:16px;">{{survey.latest_content}}</p>
+    </div>
+    <div class="spacer" style="width: 300px; height: 13px;"></div>
+    <div>
+      <img src="{{survey.latest_picture}}" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;" ng-repeat="survey in surveys">
+    </div>
+    <div class="spacer" style="width: 300px; height: 27px;"></div>
+    <div>
+      <img src="{{survey.latest_picture1}}" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;" ng-repeat="survey in surveys">
+    </div>
+    <div class="spacer" style="width: 300px; height: 52px;"></div>
+    <div id="page49-markdown207" ng-repeat="survey in surveys" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:18px;">{{survey.penultima_news}}</p>
+    </div>
+    <div id="page49-markdown208" ng-repeat="survey in surveys" class="show-list-numbers-and-dots">
+      <p style="color:#7C7C7C;font-size:12px;">{{survey.penultimo_time}}</p>
+    </div>
+    <div>
+      <img src="{{survey.penultima_newspicture}}" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;" ng-repeat="survey in surveys">
+    </div>
+    <div class="spacer" style="width: 300px; height: 52px;"></div>
+    <div id="page49-markdown248" ng-repeat="survey in surveys" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:18px;">{{survey.terzultima_news}}</p>
+    </div>
+    <div id="page49-markdown249" ng-repeat="survey in surveys" class="show-list-numbers-and-dots">
+      <p style="color:#7C7C7C;font-size:12px;">{{survey.terzultimo_time}}</p>
+    </div>
+    <div id="page49-markdown209" ng-repeat="survey in surveys" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:16px;">{{survey.terzultima_newscontent}}</p>
+    </div>
+    <div>
+      <img src="{{survey.terzultima_newspicture}}" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;" ng-repeat="survey in surveys">
+    </div>
+    <div class="spacer" style="width: 300px; height: 52px;"></div>
+  </ion-content>
+</ion-view>

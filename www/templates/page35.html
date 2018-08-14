@@ -1,0 +1,59 @@
+<ion-view title="兒童節目" cache-view="false" id="page35">
+  <ion-content padding="true" class="manual-remove-top-padding has-header">
+    <ion-refresher pulling-text="欲更新內容，請拉下指令列..." on-refresh="loadData()"></ion-refresher>
+    <ion-slides disable-side-menu-drag="" options="{'loop': true}" slider="slider5" delegate-handle="slider5" id="page35-slider5" style="width:100%;height:200px;">
+      <ion-slide-page id="page35-slide21" ng-repeat="picture in pictures" style="background:url(&quot;{{picture}}&quot;) no-repeat center;background-size:cover;"></ion-slide-page>
+    </ion-slides>
+    <div class="spacer" style="width: 300px; height: 17px;"></div>
+    <div id="page35-markdown112" class="show-list-numbers-and-dots">
+      <p style="color:#36CA6C;">每個人都是喜歡故事的，孩子們聽童話故事、爸媽們講枕邊故事、部落耆老們 圍火講祖先故事……時時代不管怎麼推移，故事，一直是人們傳誦事蹟、講述 道理、傳承經驗，或是浸淫在無邊無際的幻想與實際虛實之間的人生反映。 愛聽故事，可以說是世界各地人類千古不變的真理。
+      </p>
+    </div>
+    <div class="spacer" style="width: 300px; height: 13px;"></div>
+    <div id="page35-markdown113" class="show-list-numbers-and-dots">
+      <p style="color:#E4B20A;">故事，從營火圍爐的口傳，到有文字之後的書本，再到現代結合影音媒體的數 位閱讀，說故事的方法，有了很大的變化與變革。教育專家們也表示，閱讀， 是一項重要的基本能力，也是各學科領域學習的基礎。閱讀能力不佳，影響所 及不僅只是口語的傳達或是語文的理解，往往也會影響到孩子在其它領域的學 習。尤其現代的孩子們，大量接受影音遊戲的刺激與吸引，不僅是對於文字的 閱讀能力減弱，相對的，也削弱了孩子們透過故事的想像，開拓自我心靈的成 長。
+      </p>
+    </div>
+    <div class="spacer" style="width: 300px; height: 17px;"></div>
+    <form id="page35-form19" class="list">
+      <label class="item item-input" id="page35-search13">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="search" placeholder="" ng-model="data.search" ng-change="search()">
+      </label>
+    </form>
+    <div class="spacer" style="width: 300px; height: 17px;"></div>
+    <ion-list id="page35-list36">
+      <ion-item class="item-thumbnail-left balanced" id="page35-list-item43" ui-sref="itutorial({&quot;videokey&quot;:&quot;&quot;+itutorial.key+&quot;&quot;})" ng-repeat="itutorial in narrowed_itutorials">
+        <img src="{{itutorial.image}}">
+        <h2balanced>{{itutorial.name}}</h2balanced>
+      </ion-item>
+    </ion-list>
+    <div class="spacer" style="width: 300px; height: 27px;"></div>
+    <h4 id="page35-heading1" style="color:#E27E12;font-weight:600;text-align:center;">靴子老師</h4>
+    <div>
+      <img src="img/agUfO7KZRoGyYWMXSOiS_Ptof.PNG" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+    </div>
+    <div id="page35-markdown118" class="show-list-numbers-and-dots">
+      <p style="color:#E27E12;">薛美華，大家都叫她《靴子老師》，在 劇場界有《操偶之神》的美譽，是專業 偶戲的演員和導演。擅長與小朋友透過 角色扮演和遊戲的方式，引導孩子們投 入劇情，在這種「開放性」的實境表演 互動需求的條件下，可說是具有相當經 驗的人才。
+      </p>
+    </div>
+    <div class="spacer" style="width: 300px; height: 48px;"></div>
+    <h1 id="page35-heading5" style="color:#0D0DC3;">節目特色</h1>
+    <div id="page35-markdown121" class="show-list-numbers-and-dots">
+      <p style="color:#F31A1A;">ㄧ、真實的實境故事因為變化多元,各具特色,十分具有吸引力,以不同地 區、不同背景、卻同樣積極、同樣有創意,也同樣有想像力的小朋友們, 把發自內心的想像傳遞給收視者,激發孩子的創作能量。</p>
+    </div>
+    <div id="page35-markdown122" class="show-list-numbers-and-dots">
+      <p style="color:#54AD2E;">二、時下媒體多半以娛樂性居多,本節目設計,係由孩子的視角出發,以他 們的思維思考、讓孩子的童言童心,傳遞真摯,巧妙建立收視孩子們的 同理心、柔軟心、想像力與創造力。讓孩子們在媒體節目中,有更進一 步親近同儕心理的空間。</p>
+    </div>
+    <div id="page35-markdown123" class="show-list-numbers-and-dots">
+      <p style="color:#4432EC;">三、每一集選擇一本故事繪本,透過可愛的小故事,談責任、談勇氣、談關 懷、談互助、談尊重與感恩,教出品格力。透過面向深、廣、多元的主 題,讓孩子對自我健康、自然環保、藝術創意...... 等等不同主題中,潛 移默化、寓教於樂。</p>
+    </div>
+    <div id="page35-markdown124" class="show-list-numbers-and-dots">
+      <p style="color:#EE2CD6;">四、結合數位平台,延伸平面繪本,成為互動學習與遊戲的素材,讓孩子透 過說故事、聽故事、與看故事,從小培養孩子的芠學底蘊,以及寓教於 樂。讓閱讀可以更有趣,也讓孩子透過創意發想,讓說故事可以更有童 趣以及更貼近童心。</p>
+    </div>
+    <div id="page35-markdown125" class="show-list-numbers-and-dots">
+      <p style="color:#DF6D03;">五、從前置到後製,擁有完整的顧問團隊的支持與協助,讓節目呈現更專業, 議題更深入,表達更寫實,給觀眾的收獲更紮實。</p>
+    </div>
+    <div class="spacer" style="width: 300px; height: 48px;"></div>
+  </ion-content>
+</ion-view>

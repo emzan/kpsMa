@@ -1,179 +1,33 @@
-<ion-view title="國中部" id="page14">
+<ion-view title="利瑪竇和教宗" id="page14">
   <ion-content padding="true" class="has-header">
-    <a href-inappbrowser="https://sites.google.com/a/bish.tp.edu.tw/junior2/" id="page14-button13" style="font-weight:600;border-radius:-1px -1px -1px -1px;" class="button button-positive button-block button-clear">男女兼收 ‧ 男生可直升</a>
-    <div>
-      <img src="img/QxG3NfapTkaKBQoRUd05_103.gif" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+    <ion-slides disable-side-menu-drag="" options="{'loop': true}" slider="slider1" delegate-handle="slider1" id="page14-slider1" style="width:100%;height:200px;">
+      <ion-slide-page id="page14-slide24" ng-repeat="picture in pictures" style="background:url(&quot;{{picture}}&quot;) no-repeat center;background-size:cover;">
+        <div class="spacer" style="width: 300px; height: 29px;"></div>
+      </ion-slide-page>
+    </ion-slides>
+    <div class="spacer" style="width: 300px; height: 17px;"></div>
+    <a ui-sref="quiz()" id="page14-button16" class="button button-positive button-block">New quiz! 嘗試新的測驗!</a>
+    <div id="page14-markdown236" class="show-list-numbers-and-dots">
+      <p style="color:#000000;">光啟社與江蘇電視台在這幾年陸續合作完成《徐光啟》、《湯若望》、《郎世寧》三部紀錄片，影片透過中央電視台等媒體播出讓數以千萬的海內外觀眾得以收看、了解天主教會在東方傳教的貢獻與發展，同時也獲得了許多國內外的優秀紀錄片製作獎項。</p>
     </div>
-    <div>
-      <img src="img/xu8pB1YURFCEkHdzEJoz_104.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+    <form id="page14-form13" class="list">
+      <label class="item item-input" id="page14-search9">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="search" placeholder="" ng-model="data.search" ng-change="search()">
+      </label>
+      <div class="spacer" style="width: 300px; height: 15px;"></div>
+      <ion-item class="item-thumbnail-left" id="page14-list-item24" ui-sref="ftutorial({&quot;videokey&quot;:&quot;&quot;+ftutorial.key+&quot;&quot;})" ng-repeat="ftutorial in narrowed_ftutorials">
+        <img src="{{ftutorial.image}}">
+        <h2>{{ftutorial.name}}</h2>
+        <p>{{ftutorial.description}}</p>
+      </ion-item>
+    </form>
+    <div class="spacer" style="width: 300px; height: 17px;"></div>
+    <div id="page14-markdown230" class="show-list-numbers-and-dots">
+      <p style="color:#000000;">先前光啟社代表獲教宗接見時，教宗鼓勵我們製作系列紀錄片，持續發揮媒體福傳的力量，而光啟社提出的「利瑪竇」紀錄片計畫，也獲得梵蒂岡的支持。</p>
+
+      <p style="color:#000000;">讓我們一起跟隨教宗方濟各的腳步，善盡基督徒的福傳責任，以影音寫下天主教會的歷史。</p>
     </div>
-    <div>
-      <img src="img/UpuDlIIbQniDLL8fSHAN_105.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/y2eXWO0gTFiTTmWb1CF6_106.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/DGyQEOUcSwiX5YiH03bn_107.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/Yzzib40SsCABbUxNpITW_108.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/yucDlBMfSmmvTxV2C3Y6_109.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/1rnXssK0QSWKoKHbuSux_110.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/am1iBKQnTxOGYyOm2Kmb_111.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/tRyZuuqpR4io9isYy6mM_112.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/hRFNtqqBTvm1rjSSIoj1_113.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/Fox2RYtgTBCFthFwQj32_114.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/7OSoldbSKmcf8jYYZbsy_115.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/vPVTRIwQR8ekaYMPr0r6_116.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/YlYHBimGRuCjLqisj34A_117.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/Fj9UaaAhQcS2K4aKOksI_118.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/2GawqD8TTGPuwlvbozsJ_119.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/8eFQSqeQm2F9XNjSnMTQ_120.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/IpeAoGz1QdibFHO2CVh0_121.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/SC2BEMLcTSyiGjPPfnpU_122.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/4nWEzUozTzGLwSJE1A8q_123.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/wTEQY5PHR4ezaJCgnuJp_124.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/VNvf6WeSFynu4hVzxBxz_125.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/yZUTUn2DTQma4HBCJTeV_126.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/ZzkHcFV6RwSrM7Hbukg2_127.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/Yimkc2yPRACqTT9zQCDa_128.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/ZQMZrxGWSwW6VFZ9GVJc_129.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/8RMX1UDSS7SYkKrbYoKe_130.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/NmI4xckjQPCbb5IADZzd_131.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/mRN7EjkWT2cSfCjxlNua_132.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/2ZT2I0cSAuwAdQgJON3u_133.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/cNtBTWuaQj6gngX0p0VI_134.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/Cd66jpmRje5a6BW2Gqrl_135.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/IEmDwFLT2mQfInqbbMsw_136.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/adSOOn6SaiiBF3qvBn3I_137.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/jpVAkntTTXSrcOtfnHlb_138.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/lUJo7zOuSG8hWYXcSBmm_139.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/X4N2zwWVSJqAAzhbHrNJ_140.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/Rvy3nVCcTtOdgghFHcsQ_141.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/DdPu9RrZRmSAOZDASMhn_142.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/RGcRLZi4QymVVM8ytVXB_143.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/l5iRsrNqSWz5bqpvEImP_144.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/5jXUEEaaTpKa1yW3FPfB_145.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/9SrNhEe9QXiVZtCusO4H_146.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/lYt8mGKbR0q6BsZfFRin_147.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/sIklPZLQqGy1UGzCNkhQ_148.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/duWKQYBSQTmgVdCzcu48_149.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/RIqR8rwKSui2XgRUOFRY_150.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/iUD6xZw8Q42uLkMhyBv3_151.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/JdNDeOe1TuK3s8qPf9XE_152.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/dzpLWmeTmKyN5S19cStk_153.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/ox6dGZbmRe6HFYMUZ3wa_154.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/b8nbjOVDSyzBMXLA2bJo_155.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/QIuRr6PGR72jUjQyToOT_156.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/5zO8ER88TWqO9vu9pGlg_157.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/aQ4NP0GRSappouWGwrFL_158.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/HjOCr6zlQpi4zTl4FEFp_159.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div style="margin: 0px; line-height: 250px; background-color: rgb(232, 235, 239); text-align: center;">
-      <i class="icon ion-image" style="font-size: 64px; color: rgb(136, 136, 136); vertical-align: middle;"></i>
-    </div>
+    <div class="spacer" style="width: 300px; height: 22px;"></div>
   </ion-content>
 </ion-view>

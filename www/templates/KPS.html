@@ -1,0 +1,95 @@
+<ion-view title="KPS主頁" class="side-menu-gradient">
+  <ion-content padding="false" class=" manual-remove-top-padding has-header">
+    <ion-refresher pulling-text="欲更新內容，請拉下指令列..." on-refresh="loadData()"></ion-refresher>
+
+
+    <ion-list class="orange-background">
+      <ion-item class="light" ui-sref="quiz" style="">歡迎大家填寫問卷！請點選。</ion-item>
+    </ion-list>
+
+
+    <ion-list class="dodgerblue-background">
+      <ion-item class="light" ui-sref="page49" ng-repeat="survey in surveys | orderBy:'-'" style="">{{survey.banner_notizia}}</ion-item>
+    </ion-list>
+
+
+    <div class="profile-image">
+      <a ui-sref="KPS">
+        <img src="https://firebasestorage.googleapis.com/v0/b/defino-7d09f.appspot.com/o/KPSL.PNG?alt=media&amp;token=2d31402c-a6f6-4bd4-a159-9b3e1b42478f" style="display: block; width: 12%; height: auto; margin-left: auto; margin-right: auto;">
+      </a>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <a style="display:block;" ui-sref="page16">
+          <img src="https://firebasestorage.googleapis.com/v0/b/defino-7d09f.appspot.com/o/Copertina%2FScarCorsy.png?alt=media&amp;token=636e593b-ede1-4268-8810-d5f8accdb41a" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+        </a>
+      </div>
+      <div class="col">
+        <a style="display:block;" ui-sref="ohMyGod">
+          <img src="https://firebasestorage.googleapis.com/v0/b/defino-7d09f.appspot.com/o/Copertina%2F277x167(3).png?alt=media&amp;token=6836eea5-cf03-4ed2-85da-fc3e13440d07" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <a style="display:block;" ui-sref="page14">
+          <img src="https://firebasestorage.googleapis.com/v0/b/defino-7d09f.appspot.com/o/Copertina%2FCop_Tencent.png?alt=media&amp;token=2f995678-b75d-4131-9959-82a628e520a6" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+        </a>
+      </div>
+      <div class="col">
+        <a style="display:block;" ui-sref="page22">
+          <img src="https://firebasestorage.googleapis.com/v0/b/defino-7d09f.appspot.com/o/Copertina%2F277x167(4).png?alt=media&amp;token=1310249b-151d-46a4-a45d-079db80aa68c" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <a style="display:block;" ui-sref="page17">
+          <img src="https://firebasestorage.googleapis.com/v0/b/defino-7d09f.appspot.com/o/Copertina%2F277x167(6).png?alt=media&amp;token=95ebe578-746a-4f2c-b942-03ff231a9120" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+        </a>
+      </div>
+      <div class="col">
+        <a style="display:block;" ui-sref="page37">
+          <img src="https://firebasestorage.googleapis.com/v0/b/defino-7d09f.appspot.com/o/Copertina%2F277x167(5).png?alt=media&amp;token=3775a23a-cbc0-42e2-b8d6-726defabdd8f" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+        </a>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col">
+        <a style="display:block;" ui-sref="page11">
+          <img src="https://firebasestorage.googleapis.com/v0/b/defino-7d09f.appspot.com/o/Copertina%2FCopLego.png?alt=media&amp;token=c920e686-1be2-435e-9f16-fe80dbc1be73" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+
+        </a>
+      </div>
+      <div class="col">
+        <a style="display:block;" ui-sref="page30">
+          <img src="https://firebasestorage.googleapis.com/v0/b/defino-7d09f.appspot.com/o/Copertina%2FUnti2.jpg?alt=media&amp;token=b244cfeb-cf6f-4bd8-9e19-53ceebcaad66" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <a style="display:block;" ui-sref="page35">
+          <img src="https://firebasestorage.googleapis.com/v0/b/defino-7d09f.appspot.com/o/Copertina%2FScarpScuola.png?alt=media&amp;token=c4bf8fb6-1494-4fea-b0b6-f1864e6d17ee" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+        </a>
+      </div>
+      <div class="col">
+        <a style="display:block;" ui-sref="page32">
+          <img src="https://firebasestorage.googleapis.com/v0/b/defino-7d09f.appspot.com/o/Copertina%2FChild_story.png?alt=media&amp;token=6a7596b9-a5da-45d9-9ab8-f21c6352dcf9" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+        </a>
+      </div>
+    </div>
+
+    <ion-list class="orange-background">
+      <ion-item class="light" ui-sref="imparaLItaliano" style="">Impara l'italiano</ion-item>
+    </ion-list>
+
+    <ion-list class="orange-background">
+      <ion-item class="light" ui-sref="learnEnglish" style="">English beginner</ion-item>
+    </ion-list>
+
+  </ion-content>
+</ion-view>

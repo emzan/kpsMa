@@ -1,0 +1,22 @@
+<ion-view title="每日分享" id="page31">
+  <ion-content padding="true" class="manual-remove-top-padding has-header">
+    <div class="spacer" style="width: 300px; height: 105px;"></div>
+    <div id="page31-markdown254" ng-repeat="survey in surveys | orderBy:'-'" class="show-list-numbers-and-dots">
+      <p style="color:#E09412;font-size:15px;">{{survey.inspiration_author}}:</p>
+    </div>
+    <div class="spacer" style="width: 300px; height: 12px;"></div>
+    <div id="page31-markdown255" ng-repeat="survey in surveys | orderBy:'-'" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:17px;">{{survey.inspiration}}</p>
+    </div>
+    <ion-refresher pulling-text="欲更新內容，請拉下指令列..." on-refresh="loadData()"></ion-refresher>
+    <div class="spacer" style="width: 300px; height: 54px;"></div>
+    <div style="margin-left: -10px; width: calc(100% + 20px);">
+      <img src="img/2-01.pngaltmediatoken80fc95f2-80d6-4a82-bc03-acb256c7d91d" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+    </div>
+    <div class="spacer" style="width: 300px; height: 25px;"></div>
+    <div id="page31-markdown256" class="show-list-numbers-and-dots">
+      <p style="color:#C7AA11;">光啟社歡迎您的分享(請在
+        <strong>「讀者信箱」</strong>寫)</p>
+    </div>
+  </ion-content>
+</ion-view>

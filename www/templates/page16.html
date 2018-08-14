@@ -1,22 +1,45 @@
-<ion-view title="一般課程" id="page16">
-  <ion-content padding="true" class="has-header">
+<ion-view title="靴子裡的大世界" id="page16">
+  <ion-content padding="true" class="manual-remove-top-padding has-header">
+    <form id="page16-form8" class="list">
+      <ion-slides disable-side-menu-drag="" options="{'loop': true}" slider="slider7" delegate-handle="slider7" id="page16-slider7" style="width:calc(100% + 20px);height:200px;margin-left:-10px;">
+        <ion-slide-page id="page16-slide210" ng-repeat="picture in pictures" style="background:url(&quot;{{picture}}&quot;) no-repeat center;background-size:cover;"></ion-slide-page>
+      </ion-slides>
+      <div class="spacer" style="width: 320px; height: 23px;"></div>
+      <div id="page16-markdown114" class="show-list-numbers-and-dots">
+        <p style="color:#000000;">放眼現下的兒童電視節目，除了卡通故事、認知教學、唱唱跳跳等主流節目內容外，較少有屬於孩子們激發想像力與創造力的節目，更別說親身參與的實境節目。在整個「靴裡子的大世界」節目中，我們希望給孩子們一個全新視野的節目，透過節目，從走訪全台城鄉，看各地不同生長環境的孩童，如何發揮自已的潛力、想像力、與創造立所發展出的故事。同時也希望傳遞出───</p>
+      </div>
+      <div class="spacer" style="width: 320px; height: 23px;"></div>
+      <label class="item item-input" id="page16-search3">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="search" placeholder="" ng-model="data.search" ng-change="search()">
+      </label>
+    </form>
+    <ion-list id="page16-list9">
+      <ion-item class="item-thumbnail-left dark" id="page16-list-item48" ui-sref="stutorial({&quot;videokey&quot;:&quot;&quot;+stutorial.key+&quot;&quot;})" ng-repeat="stutorial in narrowed_stutorials">
+        <img src="{{stutorial.image}}">
+        <h2dark>{{stutorial.name}}
+          <p style="white-space:normal;">{{stutorial.description}}</p>
+        </h2dark>
+      </ion-item>
+    </ion-list>
+    <a ui-sref="quiz()" id="page16-button17" class="button button-positive button-block">New quiz! 嘗試新的測驗!</a>
+    <ion-list id="page16-list57">
+      <ion-item class="item-thumbnail-left dark" id="page16-list-item77" ui-sref="stutorial({&quot;videokey&quot;:&quot;&quot;+stutorial.key+&quot;&quot;})" ng-repeat="stutorial in narrowed_stutorials">
+        <img src="{{stutorial.image}}">
+        <h2dark>{{stutorial.name}}
+          <p style="white-space:normal;">{{stutorial.description}}</p>
+        </h2dark>
+      </ion-item>
+    </ion-list>
+    <div class="spacer" style="width: 320px; height: 22px;"></div>
+    <h3 id="page16-heading4" style="color:#0B11AA;">《靴子老師》</h3>
     <div>
-      <img src="img/0BHhWK2QT1SdQMtstKUy_95.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+      <img src="img/eziHjEajTOy8sZ5rhML9_Ptof.PNG" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
     </div>
-    <div>
-      <img src="img/jZkwVsM9RT6aqdYDBrvp_96.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+    <div id="page16-markdown117" class="show-list-numbers-and-dots">
+      <p style="color:#0B11AA;">薛美華，大家都叫她《靴子老師》，在 劇場界有《操偶之神》的美譽，是專業 偶戲的演員和導演。擅長與小朋友透過 角色扮演和遊戲的方式，引導孩子們投 入劇情，在這種「開放性」的實境表演 互動需求的條件下，可說是具有相當經 驗的人才。
+      </p>
     </div>
-    <div>
-      <img src="img/K5CCW7jeQvaiUxjnLbc6_97.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/CmljNvGRSJyHOF87YTWf_98.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/2yk9JkKWSyOEh5jYh3RZ_99.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
-    <div>
-      <img src="img/fCLETw9kRvKAIzEP1qP7_100.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-    </div>
+    <div class="spacer" style="width: 320px; height: 26px;"></div>
   </ion-content>
 </ion-view>
