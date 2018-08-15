@@ -1,8 +1,8 @@
 angular.module('app.services', [])
 
-.service('Survey', ['$http', function($http){
+.service('Messages', ['$http', function($http){
     
-    var api_url = 'https://script.googleusercontent.com/macros/echo?user_content_key=xTadJaRi3gLdqCpx4KGUX2bpFc18nkpnJ2m8guFdtmJA_mqOaFeiQgHTfBYQnoe_OJqEGmQ05NMPOodCbAYr1ePtkWMEocPSm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnKVtoCZtkVndpva-8Z0HE08kPLkd7Npe5xGrmCT9EF8pnB1tCXYCFXZSJixS_1zvGkWY2nZ7HPw5&lib=Mmq_rE2z6YtOR3c2nfZEVFVBVJNP6x9cr';
+    var api_url = 'https://sheetsu.com/apis/v1.0/74fcc38f1225';
     var currentID = 1;
     
     function filterBlankRows(l){
