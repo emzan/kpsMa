@@ -12,7 +12,7 @@ angular.module('app.routes', [])
       .state('tabsController.page23', {
     url: '/page23',
     views: {
-      'tab2': {
+      'tab3': {
         templateUrl: 'templates/page23.html',
         controller: 'page23Ctrl'
       }
@@ -52,7 +52,7 @@ angular.module('app.routes', [])
   .state('tabsController.page6', {
     url: '/page6',
     views: {
-      'tab3': {
+      'tab2': {
         templateUrl: 'templates/page6.html',
         controller: 'page6Ctrl'
       }
