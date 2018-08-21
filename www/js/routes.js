@@ -39,22 +39,6 @@ angular.module('app.routes', [])
     }
   })
 
-  .state('tabsController.page5', {
-    url: '/',
-    views: {
-      'tab6': {
-        templateUrl: 'templates/page5.html',
-        controller: 'page5Ctrl'
-      }
-    }
-  })
-
-  .state('page33', {
-    url: '/page33',
-    templateUrl: 'templates/page33.html',
-    controller: 'page33Ctrl'
-  })
-
   .state('tabsController.page6', {
     url: '/page6',
     views: {
@@ -141,12 +125,6 @@ angular.module('app.routes', [])
     url: '/page11',
     templateUrl: 'templates/page11.html',
     controller: 'page11Ctrl'
-  })
-
-  .state('page21', {
-    url: '/page21',
-    templateUrl: 'templates/page21.html',
-    controller: 'page21Ctrl'
   })
 
   .state('QA', {
