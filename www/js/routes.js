@@ -9,14 +9,10 @@ angular.module('app.routes', [])
   $stateProvider
     
 
-      .state('tabsController.page23', {
+      .state('page23', {
     url: '/page23',
-    views: {
-      'tab3': {
-        templateUrl: 'templates/page23.html',
-        controller: 'page23Ctrl'
-      }
-    }
+    templateUrl: 'templates/page23.html',
+    controller: 'page23Ctrl'
   })
 
   .state('tabsController.page3', {
