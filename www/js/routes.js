@@ -40,13 +40,19 @@ angular.module('app.routes', [])
   })
 
   .state('tabsController.page5', {
-    url: '/html',
+    url: '/',
     views: {
       'tab6': {
         templateUrl: 'templates/page5.html',
         controller: 'page5Ctrl'
       }
     }
+  })
+
+  .state('page33', {
+    url: '/page33',
+    templateUrl: 'templates/page33.html',
+    controller: 'page33Ctrl'
   })
 
   .state('tabsController.page6', {
@@ -236,7 +242,7 @@ angular.module('app.routes', [])
     controller: 'page30Ctrl'
   })
 
-$urlRouterProvider.otherwise('/page1/page6')
+$urlRouterProvider.otherwise('/page1/page4')
 
 
 });
