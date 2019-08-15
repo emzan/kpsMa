@@ -1,8 +1,8 @@
 angular.module('app.services', [])
 
-.service('Messages', ['$http', function($http){
+.service('Survey', ['$http', function($http){
     
-    var api_url = 'https://sheetsu.com/apis/v1.0/74fcc38f1225';
+    var api_url = 'https://sheetsu.com/apis/v1.0/93e73c23122b';
     var currentID = 1;
     
     function filterBlankRows(l){

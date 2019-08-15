@@ -1,13 +1,21 @@
-<ion-view title="學校網站" id="page6">
-  <ion-content padding="true" class="has-header">
-    <div>
-      <img src="img/jh8EzXJT2i5ZaICAKV5t_1.GIF" style="display: block; width: 90%; height: auto; margin-left: auto; margin-right: auto;">
+<ion-view title="天天與主親近 - 每日三時刻" id="page6">
+  <ion-content padding="true" class="manual-remove-top-padding has-header">
+    <div style="margin-left: -10px; width: calc(100% + 20px);">
+      <img src="img/POP1.JPGaltmediatoken81f53ba6-9c84-40d9-8905-3d3b8c4921d4" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
     </div>
-    <a href-inappbrowser="http://www.bish.tp.edu.tw/index.php" id="page6-button22" style="font-weight:600;color:#F4154F;" class="button button-assertive button-block button-outline icon ion-android-home"> 靜修女中 官方網站</a>
-    <a href-inappbrowser="https://www.facebook.com/%E9%9D%9C%E4%BF%AE%E5%A5%B3%E4%B8%ADBlessed-Imeldas-School-%E5%AE%98%E7%B6%B2-324338398092881/" id="page6-button23" style="font-weight:600;color:#3364FA;" class="button button-positive button-block button-outline icon ion-android-person-add">
-    靜修女中 官方FB</a>
-    <div>
-      <img src="img/vDymnWFgTyKm8sRaf92P_.gif" style="display: block; width: 90%; height: auto; margin-left: auto; margin-right: auto;">
+    <ion-refresher pulling-text="欲更新內容，請拉下指令列..." on-refresh="loadData()"></ion-refresher>
+    <div class="spacer" style="width: 300px; height: 45px;"></div>
+    <div id="page6-markdown225" ng-repeat="survey in surveys | orderBy:'-'" class="show-list-numbers-and-dots">
+      <p style="color:#1CB30F;font-size:17px;">{{survey.come_pregare0}}</p>
     </div>
+    <div class="spacer" style="width: 300px; height: 38px;"></div>
+    <div id="page6-markdown227" ng-repeat="survey in surveys | orderBy:'-'" class="show-list-numbers-and-dots">
+      <p style="color:#0EB1CF;font-size:17px;">{{survey.come_pregare1}}</p>
+    </div>
+    <div class="spacer" style="width: 300px; height: 32px;"></div>
+    <div id="page6-markdown228" ng-repeat="survey in surveys | orderBy:'-'" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:17px;">{{survey.come_pregare2}}</p>
+    </div>
+    <div class="spacer" style="width: 300px; height: 32px;"></div>
   </ion-content>
 </ion-view>

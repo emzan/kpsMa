@@ -1,0 +1,19 @@
+<ion-view title="每日讀經" cache-view="false" id="page48">
+  <ion-content padding="true" class="has-header" ng-repeat="survey in surveys">
+    <ion-refresher pulling-text="欲更新內容，請拉下指令列..." on-refresh="loadData()"></ion-refresher>
+    <div ng-init="videourl=&quot;https://www.youtube.com/embed/&quot;+survey.ultimo_vangelo+&quot;?rel=0&amp;showinfo=0&quot;" style="position:relative;overflow:hidden;padding-bottom:56.25%;height:0;" id="page48-video13">
+      <iframe src="{{videourl}}" frameborder="0" allowfullscreen="" width="560" height="315" style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+    </div>
+    <div class="spacer" style="width: 300px; height: 55px;"></div>
+    <div id="page48-markdown30" ng-repeat="survey in surveys" class="show-list-numbers-and-dots">
+      <p style="color:#C77017;font-size:16px;">
+        <strong>{{survey.vangelo_titolo}}</strong>
+      </p>
+    </div>
+    <div class="spacer" style="width: 300px; height: 55px;"></div>
+    <div id="page48-markdown51" ng-repeat="survey in surveys" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:16px;">{{survey.vangelo_commento}}</p>
+    </div>
+    <div class="spacer" style="width: 300px; height: 49px;"></div>
+  </ion-content>
+</ion-view>

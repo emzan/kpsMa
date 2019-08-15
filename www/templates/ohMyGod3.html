@@ -1,0 +1,19 @@
+<ion-view title="Oh my God 第三季 ／ 第四季" id="page54">
+  <ion-content padding="false" class="has-header">
+    <form id="ohMyGod3-form7" class="list">
+      <div class="spacer" style="width: 320px; height: 23px;"></div>
+      <label class="item item-input" id="ohMyGod3-search2">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="search" placeholder="" ng-model="data.search" ng-change="search()">
+      </label>
+    </form>
+    <ion-list id="ohMyGod3-list8">
+      <ion-item class="item-thumbnail-left dark" id="ohMyGod3-list-item51" ui-sref="tutoriale({&quot;videokey&quot;:&quot;&quot;+tutoriale.key+&quot;&quot;})" ng-repeat="tutoriale in narrowed_tutoriales">
+        <img src="{{tutoriale.image}}">
+        <h2dark>{{tutoriale.name}}
+          <p style="white-space:normal;">{{tutoriale.description}}</p>
+        </h2dark>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

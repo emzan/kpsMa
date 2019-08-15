@@ -1,36 +1,165 @@
-<ion-view title="新聞" id="page4">
-  <ion-content padding="true" class="has-header">
-    <div>
-      <a style="display:block;" href-inappbrowser="http://www.bish.tp.edu.tw/index.php">
-        <img src="img/19VST3FRF6LHns1JAqyw_image_6483441.JPG" style="display: block; width: 80%; height: auto; margin-left: auto; margin-right: auto;">
-      </a>
+<ion-view title="每天祈禱" id="page4">
+  <ion-content padding="true" class="manual-remove-top-padding has-header">
+    <ion-refresher pulling-text="欲更新內容，請拉下指令列..." on-refresh="loadData()"></ion-refresher>
+    <form id="page4-form3" class="list">
+      <div style="margin-left: -10px; width: calc(100% + 20px);">
+        <img src="img/POP1.JPGaltmediatoken81f53ba6-9c84-40d9-8905-3d3b8c4921d4" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+      </div>
+      <div class="spacer" style="width: 300px; height: 23px;"></div>
+    </form>
+    <div id="page4-markdown59" ng-repeat="child in children" class="show-list-numbers-and-dots">
+      <p style="color:#F59717;font-size:16px;">{{child.secondo_date}}</p>
     </div>
-    <a href-inappbrowser="http://www.bish.tp.edu.tw/data_news.php?sys_name=news10" id="page4-button20" style="font-weight:600;" class="button button-positive button-block button-outline">新聞報導專區</a>
-    <div>
-      <a style="display:block;" href-inappbrowser="https://www.youtube.com/watch?v=4wyc93m5z8M">
-        <img src="img/I4QjCG0bQCKKzE72EwjS_youtub.png" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
-      </a>
+    <div id="page4-markdown60" ng-repeat="child in children" class="show-list-numbers-and-dots">
+      <p style="color:#647BD1;font-size:16px;">{{child.secondo_momentmattino}}</p>
     </div>
-    <div>
-      <img src="img/TE5802tGSH6188HBU2Sf_12.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+    <div id="page4-markdown61" ng-repeat="child in children" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:16px;">{{child.secondo_namemattino}}</p>
     </div>
-    <div>
-      <img src="img/eEZpI2SSfmPJIlPafZwl_13.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+    <div id="page4-markdown62" ng-repeat="child in children" class="show-list-numbers-and-dots">
+      <p style="color:#647BD1;font-size:16px;">{{child.secondo_momentmezzo}}</p>
     </div>
-    <div>
-      <img src="img/YWhep2jQvGZgSTgzeN7w_14.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+    <div id="page4-markdown63" ng-repeat="child in children" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:16px;">{{child.secondo_namemezzo}}</p>
     </div>
-    <div>
-      <img src="img/XAwzOmmgSQaF16PXAJdJ_15.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+    <div id="page4-markdown64" ng-repeat="child in children" class="show-list-numbers-and-dots">
+      <p style="color:#647BD1;font-size:16px;">{{child.secondo_momentsera}}</p>
     </div>
-    <div>
-      <img src="img/xzNTV0OCT96ic6lfT3Jg_16.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+    <div id="page4-markdown65" ng-repeat="child in children" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:16px;">{{child.secondo_namesera}}</p>
     </div>
-    <div>
-      <img src="img/Bb01uPFlQYSa9beDpgpW_17.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+    <div class="spacer" style="width: 300px; height: 37px;"></div>
+    <div id="page4-markdown66" ng-repeat="child in children" class="show-list-numbers-and-dots">
+      <p style="color:#F59717;font-size:16px;">{{child.terzo_date}}</p>
     </div>
-    <div>
-      <img src="img/kO7BGkT7CSIgc3FYTZ2w_18.GIF" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+    <div id="page4-markdown67" ng-repeat="child in children" class="show-list-numbers-and-dots">
+      <p style="color:#647BD1;font-size:16px;">{{child.terzo_momentmattino}}</p>
     </div>
+    <div id="page4-markdown68" ng-repeat="child in children" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:16px;">{{child.terzo_namemattino}}</p>
+    </div>
+    <div id="page4-markdown69" ng-repeat="child in children" class="show-list-numbers-and-dots">
+      <p style="color:#647BD1;font-size:16px;">{{child.terzo_momentmezzo}}</p>
+    </div>
+    <div id="page4-markdown70" ng-repeat="child in children" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:16px;">{{child.terzo_namemezzo}}</p>
+    </div>
+    <div id="page4-markdown71" ng-repeat="child in children" class="show-list-numbers-and-dots">
+      <p style="color:#647BD1;font-size:16px;">{{child.terzo_momentsera}}</p>
+    </div>
+    <div id="page4-markdown72" ng-repeat="child in children" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:16px;">{{child.terzo_namesera}}</p>
+    </div>
+    <div class="spacer" style="width: 300px; height: 23px;"></div>
+    <div id="page4-markdown73" ng-repeat="child in children" class="show-list-numbers-and-dots">
+      <p style="color:#F59717;font-size:16px;">{{child.quarto_date}}</p>
+    </div>
+    <div id="page4-markdown74" ng-repeat="child in children" class="show-list-numbers-and-dots">
+      <p style="color:#647BD1;font-size:16px;">{{child.quarto_momentmattino}}</p>
+    </div>
+    <div id="page4-markdown75" ng-repeat="child in children" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:16px;">{{child.quarto_namemattino}}</p>
+    </div>
+    <div id="page4-markdown76" ng-repeat="child in children" class="show-list-numbers-and-dots">
+      <p style="color:#647BD1;font-size:16px;">{{child.quarto_momentmezzo}}</p>
+    </div>
+    <div id="page4-markdown77" ng-repeat="child in children" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:16px;">{{child.quarto_namemezzo}}</p>
+    </div>
+    <div id="page4-markdown78" ng-repeat="child in children" class="show-list-numbers-and-dots">
+      <p style="color:#647BD1;font-size:16px;">{{child.quarto_momentsera}}</p>
+    </div>
+    <div id="page4-markdown79" ng-repeat="child in children" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:16px;">{{child.quarto_namesera}}</p>
+    </div>
+    <div class="spacer" style="width: 300px; height: 23px;"></div>
+    <div id="page4-markdown80" ng-repeat="child in children" class="show-list-numbers-and-dots">
+      <p style="color:#F59717;font-size:16px;">{{child.quinto_date}}</p>
+    </div>
+    <div id="page4-markdown81" ng-repeat="child in children" class="show-list-numbers-and-dots">
+      <p style="color:#647BD1;font-size:16px;">{{child.quinto_momentmattino}}</p>
+    </div>
+    <div id="page4-markdown82" ng-repeat="child in children" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:16px;">{{child.quinto_namemattino}}</p>
+    </div>
+    <div id="page4-markdown83" ng-repeat="child in children" class="show-list-numbers-and-dots">
+      <p style="color:#647BD1;font-size:16px;">{{child.quinto_momentmezzo}}</p>
+    </div>
+    <div id="page4-markdown84" ng-repeat="child in children" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:16px;">{{child.quinto_namemezzo}}</p>
+    </div>
+    <div id="page4-markdown86" ng-repeat="child in children" class="show-list-numbers-and-dots">
+      <p style="color:#647BD1;font-size:16px;">{{child.quinto_momentsera}}</p>
+    </div>
+    <div id="page4-markdown85" ng-repeat="child in children" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:16px;">{{child.quinto_namesera}}</p>
+    </div>
+    <div class="spacer" style="width: 300px; height: 23px;"></div>
+    <div id="page4-markdown87" ng-repeat="child in children" class="show-list-numbers-and-dots">
+      <p style="color:#F59717;font-size:16px;">{{child.sesto_date}}</p>
+    </div>
+    <div id="page4-markdown88" ng-repeat="child in children" class="show-list-numbers-and-dots">
+      <p style="color:#647BD1;font-size:16px;">{{child.sesto_momentmattino}}</p>
+    </div>
+    <div id="page4-markdown89" ng-repeat="child in children" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:16px;">{{child.sesto_namemattino}}</p>
+    </div>
+    <div id="page4-markdown90" ng-repeat="child in children" class="show-list-numbers-and-dots">
+      <p style="color:#647BD1;font-size:16px;">{{child.sesto_momentmezzo}}</p>
+    </div>
+    <div id="page4-markdown91" ng-repeat="child in children" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:16px;">{{child.sesto_namemezzo}}</p>
+    </div>
+    <div id="page4-markdown92" ng-repeat="child in children" class="show-list-numbers-and-dots">
+      <p style="color:#647BD1;font-size:16px;">{{child.sesto_momentsera}}</p>
+    </div>
+    <div id="page4-markdown93" ng-repeat="child in children" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:16px;">{{child.sesto_namesera}}</p>
+    </div>
+    <div class="spacer" style="width: 300px; height: 23px;"></div>
+    <div id="page4-markdown94" ng-repeat="child in children" class="show-list-numbers-and-dots">
+      <p style="color:#F59717;font-size:16px;">{{child.settimo_date}}</p>
+    </div>
+    <div id="page4-markdown95" ng-repeat="child in children" class="show-list-numbers-and-dots">
+      <p style="color:#647BD1;font-size:16px;">{{child.settimo_momentmattino}}</p>
+    </div>
+    <div id="page4-markdown96" ng-repeat="child in children" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:16px;">{{child.settimo_namemattino}}</p>
+    </div>
+    <div id="page4-markdown97" ng-repeat="child in children" class="show-list-numbers-and-dots">
+      <p style="color:#647BD1;font-size:16px;">{{child.settimo_momentmezzo}}</p>
+    </div>
+    <div id="page4-markdown98" ng-repeat="child in children" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:16px;">{{child.settimo_namemezzo}}</p>
+    </div>
+    <div id="page4-markdown99" ng-repeat="child in children" class="show-list-numbers-and-dots">
+      <p style="color:#647BD1;font-size:16px;">{{child.settimo_momentsera}}</p>
+    </div>
+    <div id="page4-markdown100" ng-repeat="child in children" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:16px;">{{child.settimo_namesera}}</p>
+    </div>
+    <div class="spacer" style="width: 300px; height: 23px;"></div>
+    <div id="page4-markdown101" ng-repeat="child in children" class="show-list-numbers-and-dots">
+      <p style="color:#F59717;font-size:16px;">{{child.ottavo_date}}</p>
+    </div>
+    <div id="page4-markdown102" ng-repeat="child in children" class="show-list-numbers-and-dots">
+      <p style="color:#647BD1;font-size:16px;">{{child.ottavo_momentmattino}}</p>
+    </div>
+    <div id="page4-markdown103" ng-repeat="child in children" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:16px;">{{child.ottavo_namemattino}}</p>
+    </div>
+    <div id="page4-markdown104" ng-repeat="child in children" class="show-list-numbers-and-dots">
+      <p style="color:#647BD1;font-size:16px;">{{child.ottavo_momentmezzo}}</p>
+    </div>
+    <div id="page4-markdown105" ng-repeat="child in children" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:16px;">{{child.ottavo_namemezzo}}</p>
+    </div>
+    <div id="page4-markdown106" ng-repeat="child in children" class="show-list-numbers-and-dots">
+      <p style="color:#647BD1;font-size:16px;">{{child.ottavo_momentsera}}</p>
+    </div>
+    <div id="page4-markdown107" ng-repeat="child in children" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:16px;">{{child.ottavo_namesera}}</p>
+    </div>
+    <div class="spacer" style="height: 100px;"></div>
   </ion-content>
 </ion-view>
